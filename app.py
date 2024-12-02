@@ -87,7 +87,7 @@ def main():
 
     st.sidebar.selectbox("Select a chat session", chat_sessions, key="session_key", index=index)
     api_col, model_col = st.sidebar.columns(2)
-    api_col.selectbox(label="Select an API", options = ["ollama","openai"], key="endpoint_to_use", on_change=update_model_options)
+    api_col.selectbox(label="Select an API", options = ["ollama"], key="endpoint_to_use", on_change=update_model_options)
     model_col.selectbox(label="Select a Model", options = st.session_state.model_options, key="model_to_use")
     pdf_toggle_col, voice_rec_col = st.sidebar.columns(2)
     pdf_toggle_col.toggle("PDF Chat", key="pdf_chat", value=False, on_change=clear_cache)
