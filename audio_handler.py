@@ -51,7 +51,7 @@ def transcribe_audio(audio_bytes):
     device = "cpu"
     pipe = pipeline(
         task="automatic-speech-recognition",
-        model=config["whisper_model"],
+        model="openai/whisper-small",
         chunk_length_s=30,
         device=device,
     )   
