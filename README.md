@@ -88,44 +88,6 @@ I welcome contributions of all forms. Whether you’re introducing new features,
 
 - **PDF Chatting with Chroma DB**: The app is tailored for both professional and academic uses, integrating Chroma DB as a vector database for efficient PDF interactions. This feature allows users to engage with their own PDF files locally on their device. This makes it a valuable tool for personal use, where one can extract insights, summaries, and engage in a unique form of dialogue with the text in their PDF files. [Chroma website](https://docs.trychroma.com/)
 
-## Changelog
-
-### 16.09.2024:
-- **Big Update**: Model Serving based on Ollama API now. Added Openai API.
-
-<details>
-  <summary>Click to see more!</summary>
-
-### 24.08.2024:
-- **Docker Compose Added**
-
-### 17.02.2024:
-- **Input Widget Update**: Replaced st.text_input with st.chat_input to enhance interaction by leveraging a more chat-oriented UI, facilitating user engagement.
-- **Sidebar Adjustment**: Relocated the audio recording button to the sidebar for a cleaner and more organized user interface, improving accessibility and user experience.
-
-### 10.02.2024:
-- **License Added**: Implemented the GNU General Public License v3.0 to ensure the project is freely available for use, modification, and distribution under the terms of this license. A comprehensive copyright and license notice has been included in the main file (app.py) to clearly communicate the terms under which the project is offered. This addition aims to protect both the contributors' and users' rights, fostering an open and collaborative development environment. For full license details, refer to the LICENSE file in the project repository.
-- **Caching for Chat Model**: Introduced caching for the chat model to prevent it from being reloaded with every script execution. This optimization significantly improves performance by reducing load times 
-- **Config File Expansion**: Expanded the configuration file to accommodate new settings and features, providing greater flexibility and customization options for the chat application.
-
-
-### 09.02.2024:
-
-- **SQLite Database for Chat History**: Implemented a SQLite database to store the chat history.
-- **Displaying Images and Audio Files in Chat**: Chat history now supports displaying images and audio files.
-- **Added Button to delete Chat History**
-- **Updated langchain**: Runs now with the current langchain version 0.1.6
-
-### 16.01.2024:
-- **Windows User DateTime Format Issue:** Windows users seemed to have problems with the datetime format of the saved JSON chat histories. I changed the format in the `ultis.py` file to `"%Y_%m_%d_%H_%M_%S"`, which should solve the issue. Feel free to change it to your liking.
-- **UI Adjustment for Chat Scrolling:** Scrolling down in the chat annoyed me, so the text input box and the latest message are at the top now.
-
-### 12.01.2024:
-- **Issue with Message Sending:** After writing in the text field and pressing the send button, the LLM would not generate a response. 
-- **Cause of the Issue:** This happened because the `clear_input_field` callback from the button changes the text field value to an empty string after saving the user question. However, changing the text field value triggers the callback from the text field widget, setting the `user_question` to an empty string again. As a result, the LLM is not called.
-- **Implemented Workaround:** As a workaround, I added a check before changing the `user_question` value.
-</details>
-
 ## Contact Information
 
 If you're interested in working with me, feel free to contact me via email.
