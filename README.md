@@ -1,8 +1,6 @@
 # Local Multimodal AI Chat
 ## Getting Started
 
-You can follow my [YouTube-Video](https://youtu.be/eNwvAdem4vo) on setting up the repository on Linux or Windows.
-
 To get started with Local Multimodal AI Chat, clone the repository and follow these simple steps:
 
 ### Easiest and Preferred Method: Docker Compose
@@ -76,8 +74,6 @@ images e.g. [llava](https://ollama.com/library/llava)
 
 Local Multimodal AI Chat is a multimodal chat application that integrates various AI models to manage audio, images, and PDFs seamlessly within a single interface. This application is ideal for those passionate about AI and software development, offering a comprehensive solution that employs Whisper AI for audio processing, LLaVA for image management, and Chroma DB for handling PDFs.
 
-The application has been enhanced with the Ollama server and the OpenAI API, boosting its functionality and performance. You can find a detailed tutorial on the development of this repository on my [youtube channel](https://youtu.be/CUjO8b6_ZuM). While significant advancements have been made, the project is still open to further development and refinement.
-
 I welcome contributions of all forms. Whether you’re introducing new features, optimizing the code, or correcting bugs, your participation is valued. This project thrives on community collaboration and aims to serve as a robust resource for those interested in the practical application of multimodal AI technologies.
 
 
@@ -130,21 +126,8 @@ I welcome contributions of all forms. Whether you’re introducing new features,
 - **Implemented Workaround:** As a workaround, I added a check before changing the `user_question` value.
 </details>
 
-
-## Possible Improvements
-- ~~Add Model Caching.~~
-- ~~Add Images and Audio to Chat History Saving and Loading.~~
-- ~~Use a Database to Save the Chat History.~~
-- Integrate ~~Ollama, OpenAI,~~ Gemini, or Other Model Providers.
-- Add Image Generator Model.
-- Authentication Mechanism.
-- Change Theme.
-- ~~Separate Frontend and Backend Code for Better Deployment.~~
-
 ## Contact Information
 
 If you're interested in working with me, feel free to contact me via email.
-Before contacting me because of errors you're encountering, make sure to check the github issues first: https://github.com/Leon-Sander/Local-Multimodal-AI-Chat/issues?q=
 
-- Email: leonsander.consulting@gmail.com
-- Twitter: [@leonsanderai](https://twitter.com/leonsanderai)
+- Email: sumanthnshettigar@gmail.com
